@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九大體質測試</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        form div {
+            margin-bottom: 20px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e8f5e9;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>九大體質測試</h1>
+    <form id="quizForm">
+        <!-- Q1 -->
+        <div>
+            <h3>Q1: 你在春天常常感覺到什麼樣的身體狀態？</h3>
+            <label><input type="radio" name="q1" value="平和體質"> 精神穩定，狀態良好</label><br>
+            <label><input type="radio" name="q1" value="氣虛體質"> 容易疲倦，精力不足</label><br>
+            <label><input type="radio" name="q1" value="陽虛體質"> 手腳冰冷，怕冷</label><br>
+            <label><input type="radio" name="q1" value="陰虛體質"> 喉嚨乾燥，偶爾口渴</label><br>
+            <label><input type="radio" name="q1" value="痰濕體質"> 身體沉重，提不起精神</label><br>
+            <label><input type="radio" name="q1" value="濕熱體質"> 容易出汗或口乾口苦</label><br>
+            <label><input type="radio" name="q1" value="血瘀體質"> 有瘀斑或刺痛感</label><br>
+            <label><input type="radio" name="q1" value="氣鬱體質"> 胸悶，情緒鬱結</label><br>
+            <label><input type="radio" name="q1" value="特稟體質"> 遇花粉或粉塵過敏</label><br>
+        </div>
+        <!-- Q2 -->
+        <div>
+            <h3>Q2: 你的飲食偏好是什麼？</h3>
+            <label><input type="radio" name="q2" value="平和體質"> 均衡飲食，清淡為主</label><br>
+            <label><input type="radio" name="q2" value="氣虛體質"> 偏甜，喜歡滋補食物</label><br>
+            <label><input type="radio" name="q2" value="陽虛體質"> 偏辣或溫熱的食物</label><br>
+            <label><input type="radio" name="q2" value="陰虛體質"> 偏酸，喜歡果香味</label><br>
+            <label><input type="radio" name="q2" value="痰濕體質"> 偏油膩濃郁的食物</label><br>
+            <label><input type="radio" name="q2" value="濕熱體質"> 偏重口味，喜歡辛辣或鹹</label><br>
+            <label><input type="radio" name="q2" value="血瘀體質"> 偏辛辣或濃郁食物</label><br>
+            <label><input type="radio" name="q2" value="氣鬱體質"> 偏酸辣開胃的食物</label><br>
+            <label><input type="radio" name="q2" value="特稟體質"> 偏好低過敏性食物</label><br>
+        </div>
+        <!-- Q3 -->
+        <div>
+            <h3>Q3: 春季氣候對你的影響是什麼？</h3>
+            <label><input type="radio" name="q3" value="平和體質"> 適應良好，沒特別影響</label><br>
+            <label><input type="radio" name="q3" value="氣虛體質"> 容易感冒或身體疲倦</label><br>
+            <label><input type="radio" name="q3" value="陽虛體質"> 感覺冷風容易侵襲</label><br>
+            <label><input type="radio" name="q3" value="陰虛體質"> 喉嚨乾痛或口渴</label><br>
+            <label><input type="radio" name="q3" value="痰濕體質"> 感覺身體浮腫或乏力</label><br>
+            <label><input type="radio" name="q3" value="濕熱體質"> 容易皮膚出油或長痘</label><br>
+            <label><input type="radio" name="q3" value="血瘀體質"> 偶爾有刺痛感或壓迫感</label><br>
+            <label><input type="radio" name="q3" value="氣鬱體質"> 容易覺得壓力大或煩躁</label><br>
+            <label><input type="radio" name="q3" value="特稟體質"> 總是因過敏打噴嚏</label><br>
+        </div>
+       <!-- Q4 -->
+       <div>
+        <h3>Q4: 你的睡眠狀況如何？</h3>
+        <label><input type="radio" name="q4" value="平和體質"> 睡眠良好，入睡快且睡眠深</label><br>
+        <label><input type="radio" name="q4" value="氣虛體質"> 容易醒來，醒後仍感疲憊</label><br>
+        <label><input type="radio" name="q4" value="陽虛體質"> 手腳冰冷，需暖床才能入睡</label><br>
+        <label><input type="radio" name="q4" value="陰虛體質"> 容易出汗，偶爾半夜口渴</label><br>
+        <label><input type="radio" name="q4" value="痰濕體質"> 睡眠質量差，總感覺疲累</label><br>
+        <label><input type="radio" name="q4" value="濕熱體質"> 容易熱醒，睡覺不安穩</label><br>
+        <label><input type="radio" name="q4" value="血瘀體質"> 睡眠中偶爾感到局部疼痛</label><br>
+        <label><input type="radio" name="q4" value="氣鬱體質"> 因壓力或煩心事難以入睡</label><br>
+        <label><input type="radio" name="q4" value="特稟體質"> 睡眠淺，易被外界干擾驚醒</label><br>
+    </div>
+    <!-- Q5 -->
+    <div>
+        <h3>Q5: 你的運動狀態如何？</h3>
+        <label><input type="radio" name="q5" value="平和體質"> 運動後感覺精神更好</label><br>
+        <label><input type="radio" name="q5" value="氣虛體質"> 容易疲倦，恢復時間較長</label><br>
+        <label><input type="radio" name="q5" value="陽虛體質"> 運動後感覺冷或手腳冰涼</label><br>
+        <label><input type="radio" name="q5" value="陰虛體質"> 運動後覺得口乾舌燥</label><br>
+        <label><input type="radio" name="q5" value="痰濕體質"> 運動後感到沉重無力</label><br>
+        <label><input type="radio" name="q5" value="濕熱體質"> 運動後出汗多，覺得煩躁</label><br>
+        <label><input type="radio" name="q5" value="血瘀體質"> 運動後有肌肉酸痛或僵硬</label><br>
+        <label><input type="radio" name="q5" value="氣鬱體質"> 運動後感到胸悶或壓力</label><br>
+        <label><input type="radio" name="q5" value="特稟體質"> 容易因過敏而避免運動</label><br>
+    </div>
+    <!-- Q6 -->
+    <div>
+        <h3>Q6: 你的皮膚狀況如何？</h3>
+        <label><input type="radio" name="q6" value="平和體質"> 健康紅潤，光滑有彈性</label><br>
+        <label><input type="radio" name="q6" value="氣虛體質"> 臉色偏黃或蒼白</label><br>
+        <label><input type="radio" name="q6" value="陽虛體質"> 臉色偏白，偶有浮腫</label><br>
+        <label><input type="radio" name="q6" value="陰虛體質"> 偏紅，偶爾有乾燥或脫皮</label><br>
+        <label><input type="radio" name="q6" value="痰濕體質"> 膚質油膩，毛孔粗大</label><br>
+        <label><input type="radio" name="q6" value="濕熱體質"> 容易長痘，皮膚泛油光</label><br>
+        <label><input type="radio" name="q6" value="血瘀體質"> 偏暗，容易有瘀青或斑點</label><br>
+        <label><input type="radio" name="q6" value="氣鬱體質"> 偏黃暗，缺乏光澤</label><br>
+        <label><input type="radio" name="q6" value="特稟體質"> 容易過敏，皮膚紅腫或發癢</label><br>
+    </div>
+    <!-- Q7 -->
+    <div>
+        <h3>Q7: 你的日常能量水平如何？</h3>
+        <label><input type="radio" name="q7" value="平和體質"> 精力充沛，能量穩定</label><br>
+        <label><input type="radio" name="q7" value="氣虛體質"> 經常疲倦，工作效率低</label><br>
+        <label><input type="radio" name="q7" value="陽虛體質"> 怕冷，能量容易消耗</label><br>
+        <label><input type="radio" name="q7" value="陰虛體質"> 熱感明顯，容易渴</label><br>
+        <label><input type="radio" name="q7" value="痰濕體質"> 覺得身體沉重無力</label><br>
+        <label><input type="radio" name="q7" value="濕熱體質"> 容易疲勞，心煩氣躁</label><br>
+        <label><input type="radio" name="q7" value="血瘀體質"> 時常感覺某些部位不適</label><br>
+        <label><input type="radio" name="q7" value="氣鬱體質"> 精神不集中，情緒波動大</label><br>
+        <label><input type="radio" name="q7" value="特稟體質"> 能量不穩定，因過敏影響</label><br>
+    </div>
+    <!-- Q8 -->
+    <div>
+        <h3>Q8: 你對季節變化的適應能力如何？</h3>
+        <label><input type="radio" name="q8" value="平和體質"> 適應良好，無明顯影響</label><br>
+        <label><input type="radio" name="q8" value="氣虛體質"> 容易感冒，免疫力偏弱</label><br>
+        <label><input type="radio" name="q8" value="陽虛體質"> 怕冷，換季時需特別保暖</label><br>
+        <label><input type="radio" name="q8" value="陰虛體質"> 天氣炎熱時特別難受</label><br>
+        <label><input type="radio" name="q8" value="痰濕體質"> 濕度高時覺得沉重不適</label><br>
+        <label><input type="radio" name="q8" value="濕熱體質"> 天熱時容易感覺煩躁</label><br>
+        <label><input type="radio" name="q8" value="血瘀體質"> 身體在冷熱交替時感到不適</label><br>
+        <label><input type="radio" name="q8" value="氣鬱體質"> 季節變化時情緒波動大</label><br>
+        <label><input type="radio" name="q8" value="特稟體質"> 對花粉或氣候變化過敏</label><br>
+    </div>
+   <!-- Q9 -->
+   <div>
+    <h3>Q9: 你的情緒表現如何？</h3>
+    <label><input type="radio" name="q9" value="平和體質"> 情緒穩定，不容易波動</label><br>
+    <label><input type="radio" name="q9" value="氣虛體質"> 容易感到疲憊，情緒低落</label><br>
+    <label><input type="radio" name="q9" value="陽虛體質"> 偶爾情緒低沉，缺乏活力</label><br>
+    <label><input type="radio" name="q9" value="陰虛體質"> 煩躁易怒，容易感到不安</label><br>
+    <label><input type="radio" name="q9" value="痰濕體質"> 情緒穩定，但時常感到懶散</label><br>
+    <label><input type="radio" name="q9" value="濕熱體質"> 易怒，遇小事會急躁</label><br>
+    <label><input type="radio" name="q9" value="血瘀體質"> 常有壓抑感，容易憂鬱</label><br>
+    <label><input type="radio" name="q9" value="氣鬱體質"> 情緒鬱悶，愛嘆氣</label><br>
+    <label><input type="radio" name="q9" value="特稟體質"> 情緒易受過敏或體質問題影響</label><br>
+</div>
+<!-- Q10 -->
+<div>
+    <h3>Q10: 你的腸胃健康情況如何？</h3>
+    <label><input type="radio" name="q10" value="平和體質"> 消化良好，很少出現不適</label><br>
+    <label><input type="radio" name="q10" value="氣虛體質"> 容易腹脹，偶爾食欲不佳</label><br>
+    <label><input type="radio" name="q10" value="陽虛體質"> 胃口一般，常需吃溫熱的食物</label><br>
+    <label><input type="radio" name="q10" value="陰虛體質"> 偶爾消化不良，容易上火</label><br>
+    <label><input type="radio" name="q10" value="痰濕體質"> 食欲不振，時常覺得胃部不適</label><br>
+    <label><input type="radio" name="q10" value="濕熱體質"> 胃口較好，但容易出現口苦</label><br>
+    <label><input type="radio" name="q10" value="血瘀體質"> 偶爾有消化慢或腹脹感</label><br>
+    <label><input type="radio" name="q10" value="氣鬱體質"> 食欲不佳，經常覺得沒胃口</label><br>
+    <label><input type="radio" name="q10" value="特稟體質"> 腸胃易受過敏性體質影響</label><br>
+</div>
+<!-- Q11 -->
+<div>
+    <h3>Q11: 你的舌頭觀察情況如何？</h3>
+    <label><input type="radio" name="q11" value="平和體質"> 舌頭紅潤，舌苔薄白</label><br>
+    <label><input type="radio" name="q11" value="氣虛體質"> 舌頭淡白，舌苔薄</label><br>
+    <label><input type="radio" name="q11" value="陽虛體質"> 舌頭偏白，常伴有齒痕</label><br>
+    <label><input type="radio" name="q11" value="陰虛體質"> 舌頭偏紅，舌苔少或無苔</label><br>
+    <label><input type="radio" name="q11" value="痰濕體質"> 舌頭淡胖，舌苔厚膩</label><br>
+    <label><input type="radio" name="q11" value="濕熱體質"> 舌苔黃膩，舌頭偏紅</label><br>
+    <label><input type="radio" name="q11" value="血瘀體質"> 舌頭暗紅或紫色，有瘀斑</label><br>
+    <label><input type="radio" name="q11" value="氣鬱體質"> 舌頭略暗，舌苔偏薄</label><br>
+    <label><input type="radio" name="q11" value="特稟體質"> 舌頭正常，但偶爾發紅或腫</label><br>
+</div>
+<!-- Q12 -->
+<div>
+    <h3>Q12: 你的免疫力表現如何？</h3>
+    <label><input type="radio" name="q12" value="平和體質"> 很少感冒，免疫力穩定</label><br>
+    <label><input type="radio" name="q12" value="氣虛體質"> 容易感冒或患流感</label><br>
+    <label><input type="radio" name="q12" value="陽虛體質"> 冬天特別怕冷，免疫力差</label><br>
+    <label><input type="radio" name="q12" value="陰虛體質"> 容易上火或感覺發熱</label><br>
+    <label><input type="radio" name="q12" value="痰濕體質"> 身體抵抗力差，易感疲倦</label><br>
+    <label><input type="radio" name="q12" value="濕熱體質"> 容易上火，且時有不適</label><br>
+    <label><input type="radio" name="q12" value="血瘀體質"> 免疫力一般，但容易淤血</label><br>
+    <label><input type="radio" name="q12" value="氣鬱體質"> 壓力過大時免疫力下降</label><br>
+    <label><input type="radio" name="q12" value="特稟體質"> 易患過敏性疾病</label><br>
+</div>
+        <button type="button" id="submit">提交測試</button>
+    </form>
+    <div id="result" style="margin-top: 20px; font-weight: bold;"></div>
+    <script src="script.js"></script>
+</body>
+</html>
